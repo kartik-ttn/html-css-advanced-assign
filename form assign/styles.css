@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#navbar {
+    width: auto;
+    height: auto;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-basis: 40%;
+    margin-bottom: 2rem;
+}
+
+#logo {
+    color: skyblue;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#nav-links {
+    color: skyblue;
+}
+
+#nav-links > span {
+    margin-inline: 0.5rem;
+}
+
+#nav-links > span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#form-container {
+    margin: auto;
+    width: 30vw;
+    height: auto;
+    border: 1px solid #bcc3ca;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+#header {
+    color: white;
+    background-color: #bcc3ca;
+    flex-basis: 10%;
+    padding: 1rem;
+    font-size: 1.3em;
+}
+
+#form-content {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#form-fields {
+    flex-basis: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#version {
+    width: 20%;
+}
+
+#radio-group {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 0.1rem;
+}
+
+#attachment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#file-text {
+    flex-basis: 80%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#file-label {
+    background-color: #bdc3c7;
+    flex-basis: 20%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+    display: inline-block;
+    height: 27px;
+    position: relative;
+    top: -4px;
+    padding-top: 5px;
+}
+
+input[type=file] {
+    display: none;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: 1px solid #bcc3ca;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+select {
+    border: 1px solid #1abc9c;
+    border-radius: 5px;
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+    background-color: #1abc9c;
+    color: white;
+}
+
+label {
+    font-size: 0.8em;
+    padding-bottom: 5px;
+    color: #6b6b6b;
+    font-weight: bold;
+}
+
+#footer {
+    flex-basis: 10%;
+    background-color: #edeff1;
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

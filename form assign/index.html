@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            TO THE NEW
+        </div>
+        <div id="nav-links">
+            <span>Home</span>
+            <span>Quick Help</span>
+        </div>
+    </nav>
+    <main id="form-container">
+        <header id="header">
+            Bug Report
+        </header>
+        <form method="get" id="form-content">
+            <div id="form-fields">
+                <label for="title">Title:*</label>
+                <input type="text" name="title" id="title" required>
+                <label for="description">Description:*</label>
+                <textarea name="description" id="description" rows="3" required></textarea>
+                <label for="op-sys">Operating System:</label>
+                <select name="operating-system" id="op-sys">
+                    <option value="windows-xp" selected>Windows XP</option>
+                    <option value="windows-10">Windows 10</option>
+                    <option value="windows-11">Windows 11</option>
+                    <option value="macos">MacOS</option>
+                    <option value="ubuntu">Ubuntu</option>
+                </select>
+                <label for="prod">Product:*</label>
+                <select name="product" id="prod" required>
+                    <option value="formoid-1" selected>Formoid</option>
+                    <option value="formoid-2">Formoid</option>
+                    <option value="formoid-3">Formoid</option>
+                </select>
+                <label for="version">Version:*</label>
+                <input type="text" id="version" required>
+                <label for="version">License:*</label>
+                <div id="radio-group">
+                    <div id="free-lic-radio">
+                        <input type="radio" name="license" id="free-lic" value="free" checked>
+                        <label for="free-lic">Free</label>
+                    </div>
+                    <div id="business-lic-radio">
+                        <input type="radio" name="license" id="business-lic" value="business">
+                        <label for="business-lic">Business</label>
+                    </div>
+                </div>
+                <label for="severity">Severity:</label>
+                <select name="severity" id="severe">
+                    <option value="critical" selected>Critical</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="normal">Normal</option>
+                </select>
+                <label>Attachments:</label>
+                <div id="attachment">
+                    <input type="text" readonly value="No file selected" id="file-text">
+                    <label for="file-upload" id="file-label">Choose File</label>
+                    <input type="file" id="file-upload">
+                </div>
+            </div>
+            <footer id="footer">
+                <button type="submit">Send</button>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>
