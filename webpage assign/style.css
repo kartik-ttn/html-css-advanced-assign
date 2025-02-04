@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: darkgray;
+}
+  /* header */
+
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1{
+    color: black;
+  }
+  header p{
+    width: 45%;
+    text-align: center;
+    line-height: 29px;
+  }
+
+  /* main */
+  main{
+    width: 80%;
+    height: 900px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+
+  /* section1 */
+
+
+  #section1{
+    width: 51%;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+  
+  }
+  #section1 img{
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+  
+  }
+  #section1 h1{
+    color: black;
+    padding-left: 15px;
+  }
+  #section1 p{
+    padding-left: 15px;
+  }
+ .info-image{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+ }
+ .info-image img{
+    
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+ }
+ #horizontal-line{
+    height: 0px;
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+ }
+ .user-calender{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-left: 15px;
+ }
+
+
+
+
+
+
+
+  /* section2 */
+  #section2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .section2-container{
+    width: 100%;
+    /* height: 200px; */
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    /* align-items: flex-end; */
+    align-items: stretch;
+  }
+  .section2-container-image{
+    width: 45%;
+    height: 220px;
+    border-radius: 20px;
+   /* background-image: url(blog.jpeg); */
+    border: 1px solid black;
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+  }
+  .section2-container-info{
+    width: 55%;
+   
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .section2-container-info h1{
+    color: black;
+  }
+  .section2-date-info{
+    display: flex;
+    justify-content: space-between;
+  }
+  .section2-date-info img{
+    height: 20px;
+    height: 20px;
+  }
